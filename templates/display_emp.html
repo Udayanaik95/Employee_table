@@ -1,0 +1,36 @@
+<html>
+<head>
+  <title>Employee Table</title>
+</head>
+<body>
+
+    <center>
+        <h1>Employee Table</h1>
+        <table border="5px">
+            <tr>
+                <th>EMPNO</th>
+                <th>ENAME</th>
+                <th>JOB</th>
+                <th>MGR</th>
+                <th>HIREDATE</th>
+                <th>SAL</th>
+                <th>COMM</th>
+                <th>DEPTNO</th>
+            </tr>
+            {% for i in Emps %}
+                <tr>
+                    <td>{{i.EMPNO}}</td>
+                    <td>{{i.ENAME}}</td>
+                    <td>{{i.JOB}}</td>
+                    <td>{{i.MGR}}</td>
+                    <td>{{i.HIREDATE}}</td>
+                    <td>{{i.SAL}}</td>
+                    <td>{{i.COMM}}</td>
+                    <td>{{i.DEPTNO.DEPTNO}}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </center>
+
+</body>
+</html>

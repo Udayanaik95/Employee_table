@@ -1,0 +1,26 @@
+<html>
+<head>
+  <title>Department Table</title>
+</head>
+<body>
+
+    <center>
+        <h1>Department Table</h1>
+        <table border="5px">
+            <tr>
+                <th>DEPTNO</th>
+                <th>DNAME</th>
+                <th>LOC</th>
+            </tr>
+            {% for i in Depts %}
+                <tr>
+                    <td>{{i.DEPTNO}}</td>
+                    <td>{{i.DNAME}}</td>
+                    <td>{{i.LOC}}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </center>
+
+</body>
+</html>
